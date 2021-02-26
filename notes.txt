@@ -1,0 +1,8 @@
+python3 -m venv myvenv
+source myvenv/bin/activate
+python -m pip install --upgrade pip
+pip install django
+
+django-admin startproject mysite .
+python manage.py makemigrations 
+python manage.py migrate
